@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package deliveryApi.grpc2;
+
+option csharp_namespace = "deliveryApi.grpc2";
+
+import "google/protobuf/any.proto";
+import "models/pagination_model.proto";
+
+message TypesModel {
+	repeated .google.protobuf.Any types = 1;
+	PaginationModel pagination = 2;
+}

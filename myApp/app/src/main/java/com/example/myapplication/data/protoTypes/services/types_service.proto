@@ -1,0 +1,19 @@
+﻿syntax = "proto3";
+
+package deliveryApi.grpc2;
+
+option csharp_namespace = "deliveryApi.grpc2";
+
+import "models/response_model.proto";
+
+service TypesService {
+	rpc GetElement(.deliveryApi.grpc2.TypesServiceRequest) returns (ResponseModel);
+	rpc GetType(.deliveryApi.grpc2.TypesServiceRequest) returns (ResponseModel);
+	rpc GetTypes(.deliveryApi.grpc2.TypesServiceRequest) returns (ResponseModel);
+}
+
+message TypesServiceRequest {
+	string project_id = 1;
+	string codename = 2;
+	string element = 3;
+}

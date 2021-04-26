@@ -1,0 +1,38 @@
+﻿syntax = "proto3";
+
+package deliveryApi.grpc2;
+
+option csharp_namespace = "deliveryApi.grpc2";
+
+import "google/rpc/status.proto";
+import "models/element_model.proto";
+import "models/item_model.proto";
+import "models/items_feed_model.proto";
+import "models/items_model.proto";
+import "models/languages_model.proto";
+import "models/taxonomies_model.proto";
+import "models/taxonomy_model.proto";
+import "models/type_model.proto";
+import "models/types_model.proto";
+
+message ResponseModel {
+	// netreba, pretoze je dolezite len pre fastly 
+	// repeated string surrogatre_keys = 1;
+	.deliveryApi.grpc2.ResponseContentModel content = 1;
+	.Status status = 2;
+	// TODO: nahradit Request.AddDebugInformationForItemsResponse -> count, responseSize, responseSizeLimit, +- mopdularContent 
+}
+
+message ResponseContentModel {
+	oneof response {
+		ElementModel element_model = 10;
+		ItemModel item_model = 11;
+		ItemsFeedModel items_feed_model = 12;
+		ItemsModel items_model = 13;
+		LanguagesModel languages_model = 14;
+		TaxonomiesModel taxonomies_model = 15;
+		TaxonomyModel taxonomy_model = 16;
+		TypeModel type_model = 17;
+		TypesModel types_model = 18;
+	}
+}
