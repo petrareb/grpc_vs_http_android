@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/app_name_text"
+        style="@style/AppNameActivityMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/button_http_items"
+        style="@style/ButtonActivityMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Get items from HTTP API" />
+<!--        android:background="?android:attr/selectableItemBackground"/>-->
+
+    <Button
+        android:id="@+id/button_grpc_items"
+        style="@style/ButtonActivityMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Get items from gRPC API" />
+<!--        android:background="?android:attr/selectableItemBackground"/>-->
+
+</LinearLayout>
