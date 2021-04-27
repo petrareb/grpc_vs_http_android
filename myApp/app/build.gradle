@@ -47,6 +47,8 @@ android {
     }
 }
 
+def grpcVersion = '1.35.0'
+
 dependencies {
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
@@ -57,9 +59,16 @@ dependencies {
     implementation 'com.github.kentico:kontent-delivery:4.4.1'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlin_version}"
+    implementation 'io.grpc:grpc-protobuf-lite:1.37.0'
 
     compileOnly "javax.annotation:javax.annotation-api:1.3.2"
+
+    // generates service stubs in grpc directory
     implementation "com.google.protobuf:protobuf-javalite:3.13.0"
+
+    //-------------- client
+    implementation "io.grpc:grpc-stub:${grpcVersion}"
+    implementation "io.grpc:grpc-netty-shaded:${grpcVersion}"
 }
 
 protobuf {
@@ -67,11 +76,19 @@ protobuf {
         artifact = 'com.google.protobuf:protoc:3.13.0'
     }
 
+    plugins {
+        grpc {
+            artifact = "io.grpc:protoc-gen-grpc-java:${grpcVersion}"
+        }
+    }
     generateProtoTasks.generatedFilesBaseDir = "app\\src\\main\\java\\com\\example\\myapplication\\data\\generated"
 
     generateProtoTasks {
         all().each { task ->
             task.plugins {
+                grpc {
+                    option 'lite'
+                }
                 task.generateDescriptorSet = true
             }
             task.builtins {
