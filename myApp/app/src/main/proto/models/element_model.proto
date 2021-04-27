@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+option java_multiple_files = false;
+option java_outer_classname = "ElementModelContainer";
+//option csharp_namespace = "deliveryApi.grpc2";
+
+package grpcDelivery.models;
+
+import "google/protobuf/any.proto";
+
+message ElementModel {
+	google.protobuf.Any element = 1;
+}

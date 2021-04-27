@@ -1,0 +1,27 @@
+﻿syntax = "proto3";
+
+option java_multiple_files = false;
+option java_outer_classname = "ItemsServiceContainer";
+//option csharp_namespace = "deliveryApi.grpc2";
+
+package grpcDelivery.services;
+
+import "models/response_model.proto";
+
+service ItemsService {
+	rpc GetItem(ItemsServiceRequest) returns (grpcDelivery.models.ResponseModel);
+	rpc GetItems(ItemsServiceRequest) returns (grpcDelivery.models.ResponseModel);
+	rpc GetItemsFeed(ItemsServiceRequest) returns (grpcDelivery.models.ResponseModel);
+
+	rpc Pokus(ItemsServiceRequest) returns (PokusResponse);
+}
+
+message ItemsServiceRequest {
+	string project_id = 1;
+	string codename = 2;
+}
+
+message PokusResponse {
+	string project_id = 1;
+	string codename = 2;
+}

@@ -1,0 +1,69 @@
+﻿syntax = "proto3";
+
+option java_multiple_files = false;
+option java_outer_classname = "ItemModelContainer";
+//option csharp_namespace = "deliveryApi.grpc2";
+
+package grpcDelivery.models;
+
+/* original item model
+message ItemModel {
+	.google.protobuf.Any item = 1;
+	map<string,.google.protobuf.Any> modular_content = 2;
+}
+*/
+
+// message allowing mocking data similar to real data
+message ItemModel {
+	ItemProperties item = 1;
+	//map<string,.deliveryApi.grpc2.ItemSystem> modular_content = 2;
+	ItemSystem modular_content = 2;
+}
+
+message ItemProperties {
+	ItemSystem system = 1;
+	//repeated .deliveryApi.grpc2.ItemElement elements = 2;
+	ItemElement elements = 2;
+}
+
+message ItemSystem {
+	string id = 1;
+	string name = 2;
+	string codename = 3;
+	string language = 4;
+	string type = 5;
+	string collection = 6;
+	repeated string sitemap_locations = 7;
+	string last_modified = 8;
+	string workflow_step = 9;
+}
+
+message ItemElement {
+	string type = 1;
+	string name = 2;
+	string value = 3;
+}
+
+/*{
+	"item": {
+		"system": {
+			"id": "d64adff1-0ae7-49fb-a1b6-fd9f50e2d364",
+			"name": "1st content item",
+			"codename": "n1st_content_item",
+			"language": "default",
+			"type": "ct1",
+			"collection": "default",
+			"sitemap_locations": [],
+			"last_modified": "2021-02-24T21:25:31.1879226Z",
+			"workflow_step": "published"
+		},
+		"elements": {
+			"header_goes_here": {
+				"type": "text",
+				"name": "Hello world",
+				"value": "please work as i expect"
+			}
+		}
+	},
+	"modular_content": {}
+}*/

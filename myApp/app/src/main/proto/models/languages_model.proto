@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+option java_multiple_files = false;
+option java_outer_classname = "LanguagesModelContainer";
+//option csharp_namespace = "deliveryApi.grpc2";
+
+package grpcDelivery.models;
+
+import "google/protobuf/any.proto";
+import "models/pagination_model.proto";
+
+message LanguagesModel {
+	repeated .google.protobuf.Any languages = 1; 	
+	grpcDelivery.models.PaginationModel pagination = 2;
+}

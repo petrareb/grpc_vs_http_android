@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+option java_multiple_files = false;
+option java_outer_classname = "PaginationModelContainer";
+//option csharp_namespace = "deliveryApi.grpc2";
+
+package grpcDelivery.models;
+
+import "google/protobuf/wrappers.proto";
+
+message PaginationModel {
+	int32 skip = 1;
+	int32 limit = 2;
+	int32 count = 3;
+	google.protobuf.Int32Value total_count = 4;
+	string next_page_url = 5;
+}

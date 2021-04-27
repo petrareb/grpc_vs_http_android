@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+option java_multiple_files = false;
+option java_outer_classname = "HealthStatusModelContainer";
+//option csharp_namespace = "deliveryApi.grpc2";
+
+package grpcDelivery.models;
+
+import "google/protobuf/timestamp.proto";
+
+message HealthStatusModel {
+	repeated string surrogateKeys = 1;
+	string status = 2;
+	string version = 3;
+	.google.protobuf.Timestamp released_at = 4;
+	string environment = 5;
+	string slot = 6;
+}

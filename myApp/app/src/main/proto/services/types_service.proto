@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+option java_multiple_files = false;
+option java_outer_classname = "TypesServiceContainer";
+//option csharp_namespace = "grpcDelivery.services";
+
+package grpcDelivery.services;
+
+import "models/response_model.proto";
+
+service TypesService {
+	rpc GetElement(TypesServiceRequest) returns (grpcDelivery.models.ResponseModel);
+	rpc GetType(TypesServiceRequest) returns (grpcDelivery.models.ResponseModel);
+	rpc GetTypes(TypesServiceRequest) returns (grpcDelivery.models.ResponseModel);
+}
+
+message TypesServiceRequest {
+	string project_id = 1;
+	string codename = 2;
+	string element = 3;
+}

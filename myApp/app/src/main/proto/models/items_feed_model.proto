@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+option java_multiple_files = false;
+option java_outer_classname = "ItemsFeedModelContainer";
+//option csharp_namespace = "deliveryApi.grpc2";
+
+package grpcDelivery.models;
+
+import "google/protobuf/any.proto";
+
+message ItemsFeedModel {
+	repeated google.protobuf.Any items = 1;
+	map<string, google.protobuf.Any> modular_content = 2;
+}
