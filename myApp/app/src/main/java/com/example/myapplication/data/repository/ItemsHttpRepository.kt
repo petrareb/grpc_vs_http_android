@@ -1,7 +1,5 @@
 package com.example.myapplication.data.repository
 
-import android.os.Build
-import androidx.annotation.RequiresApi
 import com.example.myapplication.utils.Constants
 import kentico.kontent.delivery.ContentItemsListingResponse
 import kentico.kontent.delivery.DeliveryClient

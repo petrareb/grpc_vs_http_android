@@ -4,10 +4,12 @@ option java_multiple_files = false;
 option java_outer_classname = "ElementModelContainer";
 //option csharp_namespace = "deliveryApi.grpc2";
 
-package grpcDelivery.models;
+//package grpcDelivery.models;
+package com.example.myapplication.data.generated;
 
 import "google/protobuf/any.proto";
 
 message ElementModel {
 	google.protobuf.Any element = 1;
+	google.protobuf.Any pokus = 2;
 }

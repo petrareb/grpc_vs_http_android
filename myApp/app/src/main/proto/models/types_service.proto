@@ -4,14 +4,15 @@ option java_multiple_files = false;
 option java_outer_classname = "TypesServiceContainer";
 //option csharp_namespace = "grpcDelivery.services";
 
-package grpcDelivery.services;
+//package grpcDelivery.models;
+package com.example.myapplication.data.generated;
 
 import "models/response_model.proto";
 
 service TypesService {
-	rpc GetElement(TypesServiceRequest) returns (grpcDelivery.models.ResponseModel);
-	rpc GetType(TypesServiceRequest) returns (grpcDelivery.models.ResponseModel);
-	rpc GetTypes(TypesServiceRequest) returns (grpcDelivery.models.ResponseModel);
+	rpc GetElement(TypesServiceRequest) returns (ResponseModel);
+	rpc GetType(TypesServiceRequest) returns (ResponseModel);
+	rpc GetTypes(TypesServiceRequest) returns (ResponseModel);
 }
 
 message TypesServiceRequest {

@@ -4,14 +4,15 @@ option java_multiple_files = false;
 option java_outer_classname = "ItemsServiceContainer";
 //option csharp_namespace = "deliveryApi.grpc2";
 
-package grpcDelivery.services;
+//package grpcDelivery.models;
+package com.example.myapplication.data.generated;
 
 import "models/response_model.proto";
 
 service ItemsService {
-	rpc GetItem(ItemsServiceRequest) returns (grpcDelivery.models.ResponseModel);
-	rpc GetItems(ItemsServiceRequest) returns (grpcDelivery.models.ResponseModel);
-	rpc GetItemsFeed(ItemsServiceRequest) returns (grpcDelivery.models.ResponseModel);
+	rpc GetItem(ItemsServiceRequest) returns (ResponseModel);
+	rpc GetItems(ItemsServiceRequest) returns (ResponseModel);
+	rpc GetItemsFeed(ItemsServiceRequest) returns (ResponseModel);
 
 	rpc Pokus(ItemsServiceRequest) returns (PokusResponse);
 }

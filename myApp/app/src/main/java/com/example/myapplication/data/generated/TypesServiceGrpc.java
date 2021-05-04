@@ -1,4 +1,4 @@
-package grpcDelivery.services;
+package com.example.myapplication.data.generated;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -6,37 +6,37 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.35.0)",
-    comments = "Source: services/types_service.proto")
+    comments = "Source: models/types_service.proto")
 public final class TypesServiceGrpc {
 
   private TypesServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "grpcDelivery.services.TypesService";
+  public static final String SERVICE_NAME = "com.example.myapplication.data.generated.TypesService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<grpcDelivery.services.TypesServiceContainer.TypesServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetElementMethod;
+  private static volatile io.grpc.MethodDescriptor<TypesServiceContainer.TypesServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetElementMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetElement",
-      requestType = grpcDelivery.services.TypesServiceContainer.TypesServiceRequest.class,
-      responseType = grpcDelivery.models.ResponseModelContainer.ResponseModel.class,
+      requestType = TypesServiceContainer.TypesServiceRequest.class,
+      responseType = ResponseModelContainer.ResponseModel.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpcDelivery.services.TypesServiceContainer.TypesServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetElementMethod() {
-    io.grpc.MethodDescriptor<grpcDelivery.services.TypesServiceContainer.TypesServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetElementMethod;
+  public static io.grpc.MethodDescriptor<TypesServiceContainer.TypesServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetElementMethod() {
+    io.grpc.MethodDescriptor<TypesServiceContainer.TypesServiceRequest, ResponseModelContainer.ResponseModel> getGetElementMethod;
     if ((getGetElementMethod = TypesServiceGrpc.getGetElementMethod) == null) {
       synchronized (TypesServiceGrpc.class) {
         if ((getGetElementMethod = TypesServiceGrpc.getGetElementMethod) == null) {
           TypesServiceGrpc.getGetElementMethod = getGetElementMethod =
-              io.grpc.MethodDescriptor.<grpcDelivery.services.TypesServiceContainer.TypesServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel>newBuilder()
+              io.grpc.MethodDescriptor.<TypesServiceContainer.TypesServiceRequest, ResponseModelContainer.ResponseModel>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetElement"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.services.TypesServiceContainer.TypesServiceRequest.getDefaultInstance()))
+                  TypesServiceContainer.TypesServiceRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.models.ResponseModelContainer.ResponseModel.getDefaultInstance()))
+                  ResponseModelContainer.ResponseModel.getDefaultInstance()))
               .build();
         }
       }
@@ -44,29 +44,29 @@ public final class TypesServiceGrpc {
     return getGetElementMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpcDelivery.services.TypesServiceContainer.TypesServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetTypeMethod;
+  private static volatile io.grpc.MethodDescriptor<TypesServiceContainer.TypesServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetTypeMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetType",
-      requestType = grpcDelivery.services.TypesServiceContainer.TypesServiceRequest.class,
-      responseType = grpcDelivery.models.ResponseModelContainer.ResponseModel.class,
+      requestType = TypesServiceContainer.TypesServiceRequest.class,
+      responseType = ResponseModelContainer.ResponseModel.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpcDelivery.services.TypesServiceContainer.TypesServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetTypeMethod() {
-    io.grpc.MethodDescriptor<grpcDelivery.services.TypesServiceContainer.TypesServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetTypeMethod;
+  public static io.grpc.MethodDescriptor<TypesServiceContainer.TypesServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetTypeMethod() {
+    io.grpc.MethodDescriptor<TypesServiceContainer.TypesServiceRequest, ResponseModelContainer.ResponseModel> getGetTypeMethod;
     if ((getGetTypeMethod = TypesServiceGrpc.getGetTypeMethod) == null) {
       synchronized (TypesServiceGrpc.class) {
         if ((getGetTypeMethod = TypesServiceGrpc.getGetTypeMethod) == null) {
           TypesServiceGrpc.getGetTypeMethod = getGetTypeMethod =
-              io.grpc.MethodDescriptor.<grpcDelivery.services.TypesServiceContainer.TypesServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel>newBuilder()
+              io.grpc.MethodDescriptor.<TypesServiceContainer.TypesServiceRequest, ResponseModelContainer.ResponseModel>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetType"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.services.TypesServiceContainer.TypesServiceRequest.getDefaultInstance()))
+                  TypesServiceContainer.TypesServiceRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.models.ResponseModelContainer.ResponseModel.getDefaultInstance()))
+                  ResponseModelContainer.ResponseModel.getDefaultInstance()))
               .build();
         }
       }
@@ -74,29 +74,29 @@ public final class TypesServiceGrpc {
     return getGetTypeMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpcDelivery.services.TypesServiceContainer.TypesServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetTypesMethod;
+  private static volatile io.grpc.MethodDescriptor<TypesServiceContainer.TypesServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetTypesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetTypes",
-      requestType = grpcDelivery.services.TypesServiceContainer.TypesServiceRequest.class,
-      responseType = grpcDelivery.models.ResponseModelContainer.ResponseModel.class,
+      requestType = TypesServiceContainer.TypesServiceRequest.class,
+      responseType = ResponseModelContainer.ResponseModel.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpcDelivery.services.TypesServiceContainer.TypesServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetTypesMethod() {
-    io.grpc.MethodDescriptor<grpcDelivery.services.TypesServiceContainer.TypesServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetTypesMethod;
+  public static io.grpc.MethodDescriptor<TypesServiceContainer.TypesServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetTypesMethod() {
+    io.grpc.MethodDescriptor<TypesServiceContainer.TypesServiceRequest, ResponseModelContainer.ResponseModel> getGetTypesMethod;
     if ((getGetTypesMethod = TypesServiceGrpc.getGetTypesMethod) == null) {
       synchronized (TypesServiceGrpc.class) {
         if ((getGetTypesMethod = TypesServiceGrpc.getGetTypesMethod) == null) {
           TypesServiceGrpc.getGetTypesMethod = getGetTypesMethod =
-              io.grpc.MethodDescriptor.<grpcDelivery.services.TypesServiceContainer.TypesServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel>newBuilder()
+              io.grpc.MethodDescriptor.<TypesServiceContainer.TypesServiceRequest, ResponseModelContainer.ResponseModel>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetTypes"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.services.TypesServiceContainer.TypesServiceRequest.getDefaultInstance()))
+                  TypesServiceContainer.TypesServiceRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.models.ResponseModelContainer.ResponseModel.getDefaultInstance()))
+                  ResponseModelContainer.ResponseModel.getDefaultInstance()))
               .build();
         }
       }
@@ -110,7 +110,7 @@ public final class TypesServiceGrpc {
   public static TypesServiceStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<TypesServiceStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<TypesServiceStub>() {
-        @java.lang.Override
+        @Override
         public TypesServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new TypesServiceStub(channel, callOptions);
         }
@@ -125,7 +125,7 @@ public final class TypesServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<TypesServiceBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<TypesServiceBlockingStub>() {
-        @java.lang.Override
+        @Override
         public TypesServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new TypesServiceBlockingStub(channel, callOptions);
         }
@@ -140,7 +140,7 @@ public final class TypesServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<TypesServiceFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<TypesServiceFutureStub>() {
-        @java.lang.Override
+        @Override
         public TypesServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new TypesServiceFutureStub(channel, callOptions);
         }
@@ -154,47 +154,47 @@ public final class TypesServiceGrpc {
 
     /**
      */
-    public void getElement(grpcDelivery.services.TypesServiceContainer.TypesServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getElement(TypesServiceContainer.TypesServiceRequest request,
+                           io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetElementMethod(), responseObserver);
     }
 
     /**
      */
-    public void getType(grpcDelivery.services.TypesServiceContainer.TypesServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getType(TypesServiceContainer.TypesServiceRequest request,
+                        io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTypeMethod(), responseObserver);
     }
 
     /**
      */
-    public void getTypes(grpcDelivery.services.TypesServiceContainer.TypesServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getTypes(TypesServiceContainer.TypesServiceRequest request,
+                         io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTypesMethod(), responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getGetElementMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                grpcDelivery.services.TypesServiceContainer.TypesServiceRequest,
-                grpcDelivery.models.ResponseModelContainer.ResponseModel>(
+                TypesServiceContainer.TypesServiceRequest,
+                ResponseModelContainer.ResponseModel>(
                   this, METHODID_GET_ELEMENT)))
           .addMethod(
             getGetTypeMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                grpcDelivery.services.TypesServiceContainer.TypesServiceRequest,
-                grpcDelivery.models.ResponseModelContainer.ResponseModel>(
+                TypesServiceContainer.TypesServiceRequest,
+                ResponseModelContainer.ResponseModel>(
                   this, METHODID_GET_TYPE)))
           .addMethod(
             getGetTypesMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                grpcDelivery.services.TypesServiceContainer.TypesServiceRequest,
-                grpcDelivery.models.ResponseModelContainer.ResponseModel>(
+                TypesServiceContainer.TypesServiceRequest,
+                ResponseModelContainer.ResponseModel>(
                   this, METHODID_GET_TYPES)))
           .build();
     }
@@ -208,7 +208,7 @@ public final class TypesServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected TypesServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new TypesServiceStub(channel, callOptions);
@@ -216,24 +216,24 @@ public final class TypesServiceGrpc {
 
     /**
      */
-    public void getElement(grpcDelivery.services.TypesServiceContainer.TypesServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getElement(TypesServiceContainer.TypesServiceRequest request,
+                           io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetElementMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getType(grpcDelivery.services.TypesServiceContainer.TypesServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getType(TypesServiceContainer.TypesServiceRequest request,
+                        io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTypeMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getTypes(grpcDelivery.services.TypesServiceContainer.TypesServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getTypes(TypesServiceContainer.TypesServiceRequest request,
+                         io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTypesMethod(), getCallOptions()), request, responseObserver);
     }
@@ -247,7 +247,7 @@ public final class TypesServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected TypesServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new TypesServiceBlockingStub(channel, callOptions);
@@ -255,21 +255,21 @@ public final class TypesServiceGrpc {
 
     /**
      */
-    public grpcDelivery.models.ResponseModelContainer.ResponseModel getElement(grpcDelivery.services.TypesServiceContainer.TypesServiceRequest request) {
+    public ResponseModelContainer.ResponseModel getElement(TypesServiceContainer.TypesServiceRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetElementMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public grpcDelivery.models.ResponseModelContainer.ResponseModel getType(grpcDelivery.services.TypesServiceContainer.TypesServiceRequest request) {
+    public ResponseModelContainer.ResponseModel getType(TypesServiceContainer.TypesServiceRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTypeMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public grpcDelivery.models.ResponseModelContainer.ResponseModel getTypes(grpcDelivery.services.TypesServiceContainer.TypesServiceRequest request) {
+    public ResponseModelContainer.ResponseModel getTypes(TypesServiceContainer.TypesServiceRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTypesMethod(), getCallOptions(), request);
     }
@@ -283,7 +283,7 @@ public final class TypesServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected TypesServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new TypesServiceFutureStub(channel, callOptions);
@@ -291,24 +291,24 @@ public final class TypesServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpcDelivery.models.ResponseModelContainer.ResponseModel> getElement(
-        grpcDelivery.services.TypesServiceContainer.TypesServiceRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<ResponseModelContainer.ResponseModel> getElement(
+        TypesServiceContainer.TypesServiceRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetElementMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpcDelivery.models.ResponseModelContainer.ResponseModel> getType(
-        grpcDelivery.services.TypesServiceContainer.TypesServiceRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<ResponseModelContainer.ResponseModel> getType(
+        TypesServiceContainer.TypesServiceRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTypeMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpcDelivery.models.ResponseModelContainer.ResponseModel> getTypes(
-        grpcDelivery.services.TypesServiceContainer.TypesServiceRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<ResponseModelContainer.ResponseModel> getTypes(
+        TypesServiceContainer.TypesServiceRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTypesMethod(), getCallOptions()), request);
     }
@@ -331,29 +331,29 @@ public final class TypesServiceGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_ELEMENT:
-          serviceImpl.getElement((grpcDelivery.services.TypesServiceContainer.TypesServiceRequest) request,
-              (io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel>) responseObserver);
+          serviceImpl.getElement((TypesServiceContainer.TypesServiceRequest) request,
+              (io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel>) responseObserver);
           break;
         case METHODID_GET_TYPE:
-          serviceImpl.getType((grpcDelivery.services.TypesServiceContainer.TypesServiceRequest) request,
-              (io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel>) responseObserver);
+          serviceImpl.getType((TypesServiceContainer.TypesServiceRequest) request,
+              (io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel>) responseObserver);
           break;
         case METHODID_GET_TYPES:
-          serviceImpl.getTypes((grpcDelivery.services.TypesServiceContainer.TypesServiceRequest) request,
-              (io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel>) responseObserver);
+          serviceImpl.getTypes((TypesServiceContainer.TypesServiceRequest) request,
+              (io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {

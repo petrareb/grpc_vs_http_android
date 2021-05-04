@@ -4,7 +4,8 @@ option java_multiple_files = false;
 option java_outer_classname = "ItemsModelContainer";
 //option csharp_namespace = "deliveryApi.grpc2";
 
-package grpcDelivery.models;
+//package grpcDelivery.models;
+package com.example.myapplication.data.generated;
 
 import "models/item_model.proto";
 import "models/pagination_model.proto";
@@ -12,7 +13,7 @@ import "models/pagination_model.proto";
 message ItemsModel {
 	repeated ItemProperties items = 1;
 	ItemSystem modular_content = 2;
-	grpcDelivery.models.PaginationModel pagination = 3;
+	PaginationModel pagination = 3;
 }
 
 /*{

@@ -24,12 +24,21 @@
 <!--        android:background="?android:attr/selectableItemBackground"/>-->
 
     <Button
+        android:id="@+id/button_http_localhost_items"
+        style="@style/ButtonActivityMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Get items from HTTP API (localhost)" />
+    <!--        android:background="?android:attr/selectableItemBackground"/>-->
+
+    <Button
         android:id="@+id/button_grpc_items"
         style="@style/ButtonActivityMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Get items from gRPC API" />
+        android:text="Get items from gRPC API (localhost)" />
 <!--        android:background="?android:attr/selectableItemBackground"/>-->
 
 </LinearLayout>

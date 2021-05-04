@@ -1,4 +1,4 @@
-package grpcDelivery.services;
+package com.example.myapplication.data.generated;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -6,37 +6,37 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.35.0)",
-    comments = "Source: services/taxonomies_service.proto")
+    comments = "Source: models/taxonomies_service.proto")
 public final class TaxonomiesServiceGrpc {
 
   private TaxonomiesServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "grpcDelivery.services.TaxonomiesService";
+  public static final String SERVICE_NAME = "com.example.myapplication.data.generated.TaxonomiesService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetTaxonomyMethod;
+  private static volatile io.grpc.MethodDescriptor<TaxonomiesServiceContainer.TaxonomiesServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetTaxonomyMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetTaxonomy",
-      requestType = grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest.class,
-      responseType = grpcDelivery.models.ResponseModelContainer.ResponseModel.class,
+      requestType = TaxonomiesServiceContainer.TaxonomiesServiceRequest.class,
+      responseType = ResponseModelContainer.ResponseModel.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetTaxonomyMethod() {
-    io.grpc.MethodDescriptor<grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetTaxonomyMethod;
+  public static io.grpc.MethodDescriptor<TaxonomiesServiceContainer.TaxonomiesServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetTaxonomyMethod() {
+    io.grpc.MethodDescriptor<TaxonomiesServiceContainer.TaxonomiesServiceRequest, ResponseModelContainer.ResponseModel> getGetTaxonomyMethod;
     if ((getGetTaxonomyMethod = TaxonomiesServiceGrpc.getGetTaxonomyMethod) == null) {
       synchronized (TaxonomiesServiceGrpc.class) {
         if ((getGetTaxonomyMethod = TaxonomiesServiceGrpc.getGetTaxonomyMethod) == null) {
           TaxonomiesServiceGrpc.getGetTaxonomyMethod = getGetTaxonomyMethod =
-              io.grpc.MethodDescriptor.<grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel>newBuilder()
+              io.grpc.MethodDescriptor.<TaxonomiesServiceContainer.TaxonomiesServiceRequest, ResponseModelContainer.ResponseModel>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetTaxonomy"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest.getDefaultInstance()))
+                  TaxonomiesServiceContainer.TaxonomiesServiceRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.models.ResponseModelContainer.ResponseModel.getDefaultInstance()))
+                  ResponseModelContainer.ResponseModel.getDefaultInstance()))
               .build();
         }
       }
@@ -44,29 +44,29 @@ public final class TaxonomiesServiceGrpc {
     return getGetTaxonomyMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetTaxonomiesMethod;
+  private static volatile io.grpc.MethodDescriptor<TaxonomiesServiceContainer.TaxonomiesServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetTaxonomiesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetTaxonomies",
-      requestType = grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest.class,
-      responseType = grpcDelivery.models.ResponseModelContainer.ResponseModel.class,
+      requestType = TaxonomiesServiceContainer.TaxonomiesServiceRequest.class,
+      responseType = ResponseModelContainer.ResponseModel.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetTaxonomiesMethod() {
-    io.grpc.MethodDescriptor<grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetTaxonomiesMethod;
+  public static io.grpc.MethodDescriptor<TaxonomiesServiceContainer.TaxonomiesServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetTaxonomiesMethod() {
+    io.grpc.MethodDescriptor<TaxonomiesServiceContainer.TaxonomiesServiceRequest, ResponseModelContainer.ResponseModel> getGetTaxonomiesMethod;
     if ((getGetTaxonomiesMethod = TaxonomiesServiceGrpc.getGetTaxonomiesMethod) == null) {
       synchronized (TaxonomiesServiceGrpc.class) {
         if ((getGetTaxonomiesMethod = TaxonomiesServiceGrpc.getGetTaxonomiesMethod) == null) {
           TaxonomiesServiceGrpc.getGetTaxonomiesMethod = getGetTaxonomiesMethod =
-              io.grpc.MethodDescriptor.<grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel>newBuilder()
+              io.grpc.MethodDescriptor.<TaxonomiesServiceContainer.TaxonomiesServiceRequest, ResponseModelContainer.ResponseModel>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetTaxonomies"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest.getDefaultInstance()))
+                  TaxonomiesServiceContainer.TaxonomiesServiceRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.models.ResponseModelContainer.ResponseModel.getDefaultInstance()))
+                  ResponseModelContainer.ResponseModel.getDefaultInstance()))
               .build();
         }
       }
@@ -80,7 +80,7 @@ public final class TaxonomiesServiceGrpc {
   public static TaxonomiesServiceStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<TaxonomiesServiceStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<TaxonomiesServiceStub>() {
-        @java.lang.Override
+        @Override
         public TaxonomiesServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new TaxonomiesServiceStub(channel, callOptions);
         }
@@ -95,7 +95,7 @@ public final class TaxonomiesServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<TaxonomiesServiceBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<TaxonomiesServiceBlockingStub>() {
-        @java.lang.Override
+        @Override
         public TaxonomiesServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new TaxonomiesServiceBlockingStub(channel, callOptions);
         }
@@ -110,7 +110,7 @@ public final class TaxonomiesServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<TaxonomiesServiceFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<TaxonomiesServiceFutureStub>() {
-        @java.lang.Override
+        @Override
         public TaxonomiesServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new TaxonomiesServiceFutureStub(channel, callOptions);
         }
@@ -124,33 +124,33 @@ public final class TaxonomiesServiceGrpc {
 
     /**
      */
-    public void getTaxonomy(grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getTaxonomy(TaxonomiesServiceContainer.TaxonomiesServiceRequest request,
+                            io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTaxonomyMethod(), responseObserver);
     }
 
     /**
      */
-    public void getTaxonomies(grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getTaxonomies(TaxonomiesServiceContainer.TaxonomiesServiceRequest request,
+                              io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTaxonomiesMethod(), responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getGetTaxonomyMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest,
-                grpcDelivery.models.ResponseModelContainer.ResponseModel>(
+                TaxonomiesServiceContainer.TaxonomiesServiceRequest,
+                ResponseModelContainer.ResponseModel>(
                   this, METHODID_GET_TAXONOMY)))
           .addMethod(
             getGetTaxonomiesMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest,
-                grpcDelivery.models.ResponseModelContainer.ResponseModel>(
+                TaxonomiesServiceContainer.TaxonomiesServiceRequest,
+                ResponseModelContainer.ResponseModel>(
                   this, METHODID_GET_TAXONOMIES)))
           .build();
     }
@@ -164,7 +164,7 @@ public final class TaxonomiesServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected TaxonomiesServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new TaxonomiesServiceStub(channel, callOptions);
@@ -172,16 +172,16 @@ public final class TaxonomiesServiceGrpc {
 
     /**
      */
-    public void getTaxonomy(grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getTaxonomy(TaxonomiesServiceContainer.TaxonomiesServiceRequest request,
+                            io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTaxonomyMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getTaxonomies(grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getTaxonomies(TaxonomiesServiceContainer.TaxonomiesServiceRequest request,
+                              io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTaxonomiesMethod(), getCallOptions()), request, responseObserver);
     }
@@ -195,7 +195,7 @@ public final class TaxonomiesServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected TaxonomiesServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new TaxonomiesServiceBlockingStub(channel, callOptions);
@@ -203,14 +203,14 @@ public final class TaxonomiesServiceGrpc {
 
     /**
      */
-    public grpcDelivery.models.ResponseModelContainer.ResponseModel getTaxonomy(grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest request) {
+    public ResponseModelContainer.ResponseModel getTaxonomy(TaxonomiesServiceContainer.TaxonomiesServiceRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTaxonomyMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public grpcDelivery.models.ResponseModelContainer.ResponseModel getTaxonomies(grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest request) {
+    public ResponseModelContainer.ResponseModel getTaxonomies(TaxonomiesServiceContainer.TaxonomiesServiceRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTaxonomiesMethod(), getCallOptions(), request);
     }
@@ -224,7 +224,7 @@ public final class TaxonomiesServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected TaxonomiesServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new TaxonomiesServiceFutureStub(channel, callOptions);
@@ -232,16 +232,16 @@ public final class TaxonomiesServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpcDelivery.models.ResponseModelContainer.ResponseModel> getTaxonomy(
-        grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<ResponseModelContainer.ResponseModel> getTaxonomy(
+        TaxonomiesServiceContainer.TaxonomiesServiceRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTaxonomyMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpcDelivery.models.ResponseModelContainer.ResponseModel> getTaxonomies(
-        grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<ResponseModelContainer.ResponseModel> getTaxonomies(
+        TaxonomiesServiceContainer.TaxonomiesServiceRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTaxonomiesMethod(), getCallOptions()), request);
     }
@@ -263,25 +263,25 @@ public final class TaxonomiesServiceGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_TAXONOMY:
-          serviceImpl.getTaxonomy((grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest) request,
-              (io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel>) responseObserver);
+          serviceImpl.getTaxonomy((TaxonomiesServiceContainer.TaxonomiesServiceRequest) request,
+              (io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel>) responseObserver);
           break;
         case METHODID_GET_TAXONOMIES:
-          serviceImpl.getTaxonomies((grpcDelivery.services.TaxonomiesServiceContainer.TaxonomiesServiceRequest) request,
-              (io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel>) responseObserver);
+          serviceImpl.getTaxonomies((TaxonomiesServiceContainer.TaxonomiesServiceRequest) request,
+              (io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {

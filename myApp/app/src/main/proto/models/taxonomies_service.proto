@@ -4,13 +4,14 @@ option java_multiple_files = false;
 option java_outer_classname = "TaxonomiesServiceContainer";
 //option csharp_namespace = "deliveryApi.grpc2";
 
-package grpcDelivery.services;
+//package grpcDelivery.models;
+package com.example.myapplication.data.generated;
 
 import "models/response_model.proto";
 
 service TaxonomiesService {
-	rpc GetTaxonomy(TaxonomiesServiceRequest) returns (grpcDelivery.models.ResponseModel);
-	rpc GetTaxonomies(TaxonomiesServiceRequest) returns (grpcDelivery.models.ResponseModel);
+	rpc GetTaxonomy(TaxonomiesServiceRequest) returns (ResponseModel);
+	rpc GetTaxonomies(TaxonomiesServiceRequest) returns (ResponseModel);
 }
 
 message TaxonomiesServiceRequest {

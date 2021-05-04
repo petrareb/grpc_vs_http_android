@@ -1,4 +1,4 @@
-package grpcDelivery.services;
+package com.example.myapplication.data.generated;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -6,37 +6,37 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.35.0)",
-    comments = "Source: services/items_service.proto")
+    comments = "Source: models/items_service.proto")
 public final class ItemsServiceGrpc {
 
   private ItemsServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "grpcDelivery.services.ItemsService";
+  public static final String SERVICE_NAME = "com.example.myapplication.data.generated.ItemsService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetItemMethod;
+  private static volatile io.grpc.MethodDescriptor<ItemsServiceContainer.ItemsServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetItemMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetItem",
-      requestType = grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest.class,
-      responseType = grpcDelivery.models.ResponseModelContainer.ResponseModel.class,
+      requestType = ItemsServiceContainer.ItemsServiceRequest.class,
+      responseType = ResponseModelContainer.ResponseModel.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetItemMethod() {
-    io.grpc.MethodDescriptor<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetItemMethod;
+  public static io.grpc.MethodDescriptor<ItemsServiceContainer.ItemsServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetItemMethod() {
+    io.grpc.MethodDescriptor<ItemsServiceContainer.ItemsServiceRequest, ResponseModelContainer.ResponseModel> getGetItemMethod;
     if ((getGetItemMethod = ItemsServiceGrpc.getGetItemMethod) == null) {
       synchronized (ItemsServiceGrpc.class) {
         if ((getGetItemMethod = ItemsServiceGrpc.getGetItemMethod) == null) {
           ItemsServiceGrpc.getGetItemMethod = getGetItemMethod =
-              io.grpc.MethodDescriptor.<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel>newBuilder()
+              io.grpc.MethodDescriptor.<ItemsServiceContainer.ItemsServiceRequest, ResponseModelContainer.ResponseModel>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetItem"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest.getDefaultInstance()))
+                  ItemsServiceContainer.ItemsServiceRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.models.ResponseModelContainer.ResponseModel.getDefaultInstance()))
+                  ResponseModelContainer.ResponseModel.getDefaultInstance()))
               .build();
         }
       }
@@ -44,29 +44,29 @@ public final class ItemsServiceGrpc {
     return getGetItemMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetItemsMethod;
+  private static volatile io.grpc.MethodDescriptor<ItemsServiceContainer.ItemsServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetItemsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetItems",
-      requestType = grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest.class,
-      responseType = grpcDelivery.models.ResponseModelContainer.ResponseModel.class,
+      requestType = ItemsServiceContainer.ItemsServiceRequest.class,
+      responseType = ResponseModelContainer.ResponseModel.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetItemsMethod() {
-    io.grpc.MethodDescriptor<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetItemsMethod;
+  public static io.grpc.MethodDescriptor<ItemsServiceContainer.ItemsServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetItemsMethod() {
+    io.grpc.MethodDescriptor<ItemsServiceContainer.ItemsServiceRequest, ResponseModelContainer.ResponseModel> getGetItemsMethod;
     if ((getGetItemsMethod = ItemsServiceGrpc.getGetItemsMethod) == null) {
       synchronized (ItemsServiceGrpc.class) {
         if ((getGetItemsMethod = ItemsServiceGrpc.getGetItemsMethod) == null) {
           ItemsServiceGrpc.getGetItemsMethod = getGetItemsMethod =
-              io.grpc.MethodDescriptor.<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel>newBuilder()
+              io.grpc.MethodDescriptor.<ItemsServiceContainer.ItemsServiceRequest, ResponseModelContainer.ResponseModel>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetItems"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest.getDefaultInstance()))
+                  ItemsServiceContainer.ItemsServiceRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.models.ResponseModelContainer.ResponseModel.getDefaultInstance()))
+                  ResponseModelContainer.ResponseModel.getDefaultInstance()))
               .build();
         }
       }
@@ -74,29 +74,29 @@ public final class ItemsServiceGrpc {
     return getGetItemsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetItemsFeedMethod;
+  private static volatile io.grpc.MethodDescriptor<ItemsServiceContainer.ItemsServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetItemsFeedMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetItemsFeed",
-      requestType = grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest.class,
-      responseType = grpcDelivery.models.ResponseModelContainer.ResponseModel.class,
+      requestType = ItemsServiceContainer.ItemsServiceRequest.class,
+      responseType = ResponseModelContainer.ResponseModel.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest,
-      grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetItemsFeedMethod() {
-    io.grpc.MethodDescriptor<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel> getGetItemsFeedMethod;
+  public static io.grpc.MethodDescriptor<ItemsServiceContainer.ItemsServiceRequest,
+      ResponseModelContainer.ResponseModel> getGetItemsFeedMethod() {
+    io.grpc.MethodDescriptor<ItemsServiceContainer.ItemsServiceRequest, ResponseModelContainer.ResponseModel> getGetItemsFeedMethod;
     if ((getGetItemsFeedMethod = ItemsServiceGrpc.getGetItemsFeedMethod) == null) {
       synchronized (ItemsServiceGrpc.class) {
         if ((getGetItemsFeedMethod = ItemsServiceGrpc.getGetItemsFeedMethod) == null) {
           ItemsServiceGrpc.getGetItemsFeedMethod = getGetItemsFeedMethod =
-              io.grpc.MethodDescriptor.<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest, grpcDelivery.models.ResponseModelContainer.ResponseModel>newBuilder()
+              io.grpc.MethodDescriptor.<ItemsServiceContainer.ItemsServiceRequest, ResponseModelContainer.ResponseModel>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetItemsFeed"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest.getDefaultInstance()))
+                  ItemsServiceContainer.ItemsServiceRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.models.ResponseModelContainer.ResponseModel.getDefaultInstance()))
+                  ResponseModelContainer.ResponseModel.getDefaultInstance()))
               .build();
         }
       }
@@ -104,29 +104,29 @@ public final class ItemsServiceGrpc {
     return getGetItemsFeedMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest,
-      grpcDelivery.services.ItemsServiceContainer.PokusResponse> getPokusMethod;
+  private static volatile io.grpc.MethodDescriptor<ItemsServiceContainer.ItemsServiceRequest,
+      ItemsServiceContainer.PokusResponse> getPokusMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Pokus",
-      requestType = grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest.class,
-      responseType = grpcDelivery.services.ItemsServiceContainer.PokusResponse.class,
+      requestType = ItemsServiceContainer.ItemsServiceRequest.class,
+      responseType = ItemsServiceContainer.PokusResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest,
-      grpcDelivery.services.ItemsServiceContainer.PokusResponse> getPokusMethod() {
-    io.grpc.MethodDescriptor<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest, grpcDelivery.services.ItemsServiceContainer.PokusResponse> getPokusMethod;
+  public static io.grpc.MethodDescriptor<ItemsServiceContainer.ItemsServiceRequest,
+      ItemsServiceContainer.PokusResponse> getPokusMethod() {
+    io.grpc.MethodDescriptor<ItemsServiceContainer.ItemsServiceRequest, ItemsServiceContainer.PokusResponse> getPokusMethod;
     if ((getPokusMethod = ItemsServiceGrpc.getPokusMethod) == null) {
       synchronized (ItemsServiceGrpc.class) {
         if ((getPokusMethod = ItemsServiceGrpc.getPokusMethod) == null) {
           ItemsServiceGrpc.getPokusMethod = getPokusMethod =
-              io.grpc.MethodDescriptor.<grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest, grpcDelivery.services.ItemsServiceContainer.PokusResponse>newBuilder()
+              io.grpc.MethodDescriptor.<ItemsServiceContainer.ItemsServiceRequest, ItemsServiceContainer.PokusResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Pokus"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest.getDefaultInstance()))
+                  ItemsServiceContainer.ItemsServiceRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  grpcDelivery.services.ItemsServiceContainer.PokusResponse.getDefaultInstance()))
+                  ItemsServiceContainer.PokusResponse.getDefaultInstance()))
               .build();
         }
       }
@@ -140,7 +140,7 @@ public final class ItemsServiceGrpc {
   public static ItemsServiceStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<ItemsServiceStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<ItemsServiceStub>() {
-        @java.lang.Override
+        @Override
         public ItemsServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new ItemsServiceStub(channel, callOptions);
         }
@@ -155,7 +155,7 @@ public final class ItemsServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<ItemsServiceBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<ItemsServiceBlockingStub>() {
-        @java.lang.Override
+        @Override
         public ItemsServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new ItemsServiceBlockingStub(channel, callOptions);
         }
@@ -170,7 +170,7 @@ public final class ItemsServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<ItemsServiceFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<ItemsServiceFutureStub>() {
-        @java.lang.Override
+        @Override
         public ItemsServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new ItemsServiceFutureStub(channel, callOptions);
         }
@@ -184,61 +184,61 @@ public final class ItemsServiceGrpc {
 
     /**
      */
-    public void getItem(grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getItem(ItemsServiceContainer.ItemsServiceRequest request,
+                        io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetItemMethod(), responseObserver);
     }
 
     /**
      */
-    public void getItems(grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getItems(ItemsServiceContainer.ItemsServiceRequest request,
+                         io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetItemsMethod(), responseObserver);
     }
 
     /**
      */
-    public void getItemsFeed(grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getItemsFeed(ItemsServiceContainer.ItemsServiceRequest request,
+                             io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetItemsFeedMethod(), responseObserver);
     }
 
     /**
      */
-    public void pokus(grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.services.ItemsServiceContainer.PokusResponse> responseObserver) {
+    public void pokus(ItemsServiceContainer.ItemsServiceRequest request,
+                      io.grpc.stub.StreamObserver<ItemsServiceContainer.PokusResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getPokusMethod(), responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getGetItemMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest,
-                grpcDelivery.models.ResponseModelContainer.ResponseModel>(
+                ItemsServiceContainer.ItemsServiceRequest,
+                ResponseModelContainer.ResponseModel>(
                   this, METHODID_GET_ITEM)))
           .addMethod(
             getGetItemsMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest,
-                grpcDelivery.models.ResponseModelContainer.ResponseModel>(
+                ItemsServiceContainer.ItemsServiceRequest,
+                ResponseModelContainer.ResponseModel>(
                   this, METHODID_GET_ITEMS)))
           .addMethod(
             getGetItemsFeedMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest,
-                grpcDelivery.models.ResponseModelContainer.ResponseModel>(
+                ItemsServiceContainer.ItemsServiceRequest,
+                ResponseModelContainer.ResponseModel>(
                   this, METHODID_GET_ITEMS_FEED)))
           .addMethod(
             getPokusMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest,
-                grpcDelivery.services.ItemsServiceContainer.PokusResponse>(
+                ItemsServiceContainer.ItemsServiceRequest,
+                ItemsServiceContainer.PokusResponse>(
                   this, METHODID_POKUS)))
           .build();
     }
@@ -252,7 +252,7 @@ public final class ItemsServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected ItemsServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new ItemsServiceStub(channel, callOptions);
@@ -260,32 +260,32 @@ public final class ItemsServiceGrpc {
 
     /**
      */
-    public void getItem(grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getItem(ItemsServiceContainer.ItemsServiceRequest request,
+                        io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetItemMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getItems(grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getItems(ItemsServiceContainer.ItemsServiceRequest request,
+                         io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetItemsMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getItemsFeed(grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel> responseObserver) {
+    public void getItemsFeed(ItemsServiceContainer.ItemsServiceRequest request,
+                             io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetItemsFeedMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void pokus(grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request,
-        io.grpc.stub.StreamObserver<grpcDelivery.services.ItemsServiceContainer.PokusResponse> responseObserver) {
+    public void pokus(ItemsServiceContainer.ItemsServiceRequest request,
+                      io.grpc.stub.StreamObserver<ItemsServiceContainer.PokusResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getPokusMethod(), getCallOptions()), request, responseObserver);
     }
@@ -299,7 +299,7 @@ public final class ItemsServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected ItemsServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new ItemsServiceBlockingStub(channel, callOptions);
@@ -307,28 +307,28 @@ public final class ItemsServiceGrpc {
 
     /**
      */
-    public grpcDelivery.models.ResponseModelContainer.ResponseModel getItem(grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request) {
+    public ResponseModelContainer.ResponseModel getItem(ItemsServiceContainer.ItemsServiceRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetItemMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public grpcDelivery.models.ResponseModelContainer.ResponseModel getItems(grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request) {
+    public ResponseModelContainer.ResponseModel getItems(ItemsServiceContainer.ItemsServiceRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetItemsMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public grpcDelivery.models.ResponseModelContainer.ResponseModel getItemsFeed(grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request) {
+    public ResponseModelContainer.ResponseModel getItemsFeed(ItemsServiceContainer.ItemsServiceRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetItemsFeedMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public grpcDelivery.services.ItemsServiceContainer.PokusResponse pokus(grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request) {
+    public ItemsServiceContainer.PokusResponse pokus(ItemsServiceContainer.ItemsServiceRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getPokusMethod(), getCallOptions(), request);
     }
@@ -342,7 +342,7 @@ public final class ItemsServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected ItemsServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new ItemsServiceFutureStub(channel, callOptions);
@@ -350,32 +350,32 @@ public final class ItemsServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpcDelivery.models.ResponseModelContainer.ResponseModel> getItem(
-        grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<ResponseModelContainer.ResponseModel> getItem(
+        ItemsServiceContainer.ItemsServiceRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetItemMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpcDelivery.models.ResponseModelContainer.ResponseModel> getItems(
-        grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<ResponseModelContainer.ResponseModel> getItems(
+        ItemsServiceContainer.ItemsServiceRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetItemsMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpcDelivery.models.ResponseModelContainer.ResponseModel> getItemsFeed(
-        grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<ResponseModelContainer.ResponseModel> getItemsFeed(
+        ItemsServiceContainer.ItemsServiceRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetItemsFeedMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpcDelivery.services.ItemsServiceContainer.PokusResponse> pokus(
-        grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<ItemsServiceContainer.PokusResponse> pokus(
+        ItemsServiceContainer.ItemsServiceRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getPokusMethod(), getCallOptions()), request);
     }
@@ -399,33 +399,33 @@ public final class ItemsServiceGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_ITEM:
-          serviceImpl.getItem((grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest) request,
-              (io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel>) responseObserver);
+          serviceImpl.getItem((ItemsServiceContainer.ItemsServiceRequest) request,
+              (io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel>) responseObserver);
           break;
         case METHODID_GET_ITEMS:
-          serviceImpl.getItems((grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest) request,
-              (io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel>) responseObserver);
+          serviceImpl.getItems((ItemsServiceContainer.ItemsServiceRequest) request,
+              (io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel>) responseObserver);
           break;
         case METHODID_GET_ITEMS_FEED:
-          serviceImpl.getItemsFeed((grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest) request,
-              (io.grpc.stub.StreamObserver<grpcDelivery.models.ResponseModelContainer.ResponseModel>) responseObserver);
+          serviceImpl.getItemsFeed((ItemsServiceContainer.ItemsServiceRequest) request,
+              (io.grpc.stub.StreamObserver<ResponseModelContainer.ResponseModel>) responseObserver);
           break;
         case METHODID_POKUS:
-          serviceImpl.pokus((grpcDelivery.services.ItemsServiceContainer.ItemsServiceRequest) request,
-              (io.grpc.stub.StreamObserver<grpcDelivery.services.ItemsServiceContainer.PokusResponse>) responseObserver);
+          serviceImpl.pokus((ItemsServiceContainer.ItemsServiceRequest) request,
+              (io.grpc.stub.StreamObserver<ItemsServiceContainer.PokusResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
