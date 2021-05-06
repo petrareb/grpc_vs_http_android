@@ -12,4 +12,5 @@
 
     <string name="items_http_header">Items from HTTP API</string>
     <string name="items_grpc_header">Items from gRPC API</string>
+
 </resources>

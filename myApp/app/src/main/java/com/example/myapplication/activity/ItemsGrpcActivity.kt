@@ -5,10 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 import com.example.myapplication.adapter.ItemsGrpcAdapter
+import com.example.myapplication.data.model.Item
 import com.example.myapplication.data.repository.ItemsGrpcRepository
 
 class ItemsGrpcActivity: AppCompatActivity() {
-    private var mItems: ArrayList<String> = ArrayList()
+    private var mItems: ArrayList<Item> = ArrayList()
     private lateinit var adapter: ItemsGrpcAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,13 +25,18 @@ class ItemsGrpcActivity: AppCompatActivity() {
         recyclerView.adapter = adapter
 
         val repo = ItemsGrpcRepository()
-//        val items = repo.getItemsCodenamesMocked()
-        val items = repo.getItemsCodenames() // TODO
+        val items = repo.getItemsForListing()
 
         mItems.clear()
         mItems.addAll(items)
 
         adapter.swapData(mItems)
+
+//        if (mItems.isEmpty()) {
+//            findViewById<TextView>(R.id.no_items_found_http).visibility = View.VISIBLE
+//        } else {
+//            findViewById<TextView>(R.id.no_items_found_http).visibility = View.GONE
+//        }
     }
 
 //    private fun initRecipesRecyclerShared(items : List<Item>){

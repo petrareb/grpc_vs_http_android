@@ -23,5 +23,10 @@
             android:layout_height="match_parent"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
+        <TextView
+            android:id="@+id/no_items_found_http"
+            android:text="There was a problem with connection to the localhost."
+            style="@style/not_found" />
+
     </LinearLayout>
 </ScrollView>

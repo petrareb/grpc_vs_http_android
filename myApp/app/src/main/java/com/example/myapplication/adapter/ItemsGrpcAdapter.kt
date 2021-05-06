@@ -8,20 +8,23 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
+import com.example.myapplication.data.model.Item
 
 class ItemsGrpcAdapter(
-    private var items: List<String> = listOf()
+        private var items: List<Item> = listOf()
 ) : RecyclerView.Adapter<ItemsGrpcAdapter.ViewHolder>() {
 
     class ViewHolder(
-        private var itemsView: View
+            private var itemsView: View
     ) : RecyclerView.ViewHolder(itemsView) {
 
         var itemName: TextView = itemsView.findViewById(R.id.item_name)
+        var itemId: TextView = itemsView.findViewById(R.id.item_id)
 
         @SuppressLint("UseCompatLoadingForDrawables")
-        fun bind(item: String) {
-            itemName.text = item
+        fun bind(item: Item) {
+            itemName.text = item.name
+            itemId.text = item.id
             val img: Drawable = itemsView.resources.getDrawable(R.drawable.ic_circle)
             img.setBounds(0, 0, 60, 60)
         }
@@ -29,11 +32,11 @@ class ItemsGrpcAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
-            LayoutInflater.from(parent.context).inflate(
-                R.layout.items_list_item,
-                parent,
-                false
-            )
+                LayoutInflater.from(parent.context).inflate(
+                        R.layout.items_list_item,
+                        parent,
+                        false
+                )
         )
     }
 
@@ -45,12 +48,8 @@ class ItemsGrpcAdapter(
         holder.bind(items[position])
     }
 
-    fun swapData(newData: List<String>) {
+    fun swapData(newData: List<Item>) {
         items = newData
         notifyDataSetChanged()
     }
-//    fun swapData(newData: List<Item>) {
-//        items = newData
-//        notifyDataSetChanged()
-//    }
 }
