@@ -10,6 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 import com.example.myapplication.data.model.Item
 
+/**
+ * Adapter for inserting gRPC items to the list in the ItemsGrpcActivity
+ */
 class ItemsGrpcAdapter(
         private var items: List<Item> = listOf()
 ) : RecyclerView.Adapter<ItemsGrpcAdapter.ViewHolder>() {
@@ -24,7 +27,7 @@ class ItemsGrpcAdapter(
         @SuppressLint("UseCompatLoadingForDrawables")
         fun bind(item: Item) {
             itemName.text = item.name
-            itemId.text = item.id
+            itemId.text = item.codename
             val img: Drawable = itemsView.resources.getDrawable(R.drawable.ic_circle)
             img.setBounds(0, 0, 60, 60)
         }

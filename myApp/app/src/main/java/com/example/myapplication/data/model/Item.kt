@@ -1,4 +1,7 @@
 package com.example.myapplication.data.model
 
-data class Item(val name: String, val id: String) {
+/**
+ * Class representing displayed part of the items retrieved from APIs
+ */
+data class Item(val name: String, val codename: String) {
 }

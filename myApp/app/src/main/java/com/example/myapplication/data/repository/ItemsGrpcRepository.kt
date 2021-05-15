@@ -7,14 +7,20 @@ import com.example.myapplication.utils.getPlaceholderItems
 import io.grpc.ManagedChannelBuilder
 import io.grpc.StatusRuntimeException
 
+/**
+ * Repository class for connection by localhost to the gRPC part of the Delivery API
+ */
 class ItemsGrpcRepository {
     private val channel = ManagedChannelBuilder
-// https://grpc.io/docs/platforms/android/java/quickstart/ returns unavailable exp
-            .forTarget(Constants.GRPC_LOCALHOST_EMULATOR) // https://developer.android.com/studio/run/emulator-networking#networkaddresses
+            .forTarget(Constants.GRPC_LOCALHOST_EMULATOR)
             .usePlaintext()
             .build()
     private val itemsStub = ItemsServiceGrpc.newBlockingStub(channel);
 
+    /**
+     * Gets response model with items from Kentico Kontent gRPC part of Delivery API
+     * @return response model containing items
+     */
     fun getItems(projectId: String): ItemsModelContainer.ItemsModel? {
         val request = ItemsServiceContainer.ItemsServiceRequest
                 .newBuilder()
@@ -29,24 +35,13 @@ class ItemsGrpcRepository {
         return response.content.itemsModel
     }
 
-    fun getItem(projectId: String, codeName: String): ItemModelContainer.ItemModel? {
-        val request = ItemsServiceContainer.ItemsServiceRequest
-                .newBuilder()
-                .setProjectId(projectId)
-                .setCodename(codeName)
-                .build()
-        val response: ResponseModelContainer.ResponseModel
-        try {
-            response = itemsStub.getItem(request)
-        } catch (e: StatusRuntimeException) {
-            return null
-        }
-        return response.content.itemModel
-    }
-
+    /**
+     * Gets items from listing from response model
+     * @return list of items
+     */
     fun getItemsForListing(): MutableList<Item> {
         val items = mutableListOf<Item>()
-        val response = getItems(Constants.PROJECT_ID)
+        val response = getItems(Constants.LOCAL_GRPC_PROJECT_ID)
         response?.itemsList?.forEach {
             val item = Item(it.system.name, it.system.codename)
             items.add(item)

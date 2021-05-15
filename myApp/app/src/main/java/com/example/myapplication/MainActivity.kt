@@ -33,6 +33,5 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ItemsGrpcActivity::class.java)
             startActivity(intent)
         }
-
     }
 }

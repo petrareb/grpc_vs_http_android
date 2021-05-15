@@ -15,9 +15,10 @@ import com.example.myapplication.data.repository.ItemsHttpLocalhostRepository
 import com.example.myapplication.data.repository.ItemsHttpRepository
 import com.example.myapplication.utils.Constants
 
-
+/**
+ * Activity displaying items retrieved from HTTP Delivery API
+ */
 class ItemsHttpActivity: AppCompatActivity() {
-//    private var mItems: ArrayList<String> = ArrayList()
     private var mItems: ArrayList<Item> = ArrayList()
     private lateinit var adapter: ItemsHttpAdapter
     private var useLocalhost: Boolean = false
@@ -49,7 +50,6 @@ class ItemsHttpActivity: AppCompatActivity() {
         recyclerView.adapter = adapter
 
         val repo = ItemsHttpRepository()
-//        val items = repo.getItemsCodenames()
         val items = repo.getItemsForListing()
 
         mItems.clear()

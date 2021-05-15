@@ -8,6 +8,9 @@ import com.example.myapplication.adapter.ItemsGrpcAdapter
 import com.example.myapplication.data.model.Item
 import com.example.myapplication.data.repository.ItemsGrpcRepository
 
+/**
+ * Activity displaying items retrieved from gRPC part of Delivery API
+ */
 class ItemsGrpcActivity: AppCompatActivity() {
     private var mItems: ArrayList<Item> = ArrayList()
     private lateinit var adapter: ItemsGrpcAdapter
@@ -31,22 +34,5 @@ class ItemsGrpcActivity: AppCompatActivity() {
         mItems.addAll(items)
 
         adapter.swapData(mItems)
-
-//        if (mItems.isEmpty()) {
-//            findViewById<TextView>(R.id.no_items_found_http).visibility = View.VISIBLE
-//        } else {
-//            findViewById<TextView>(R.id.no_items_found_http).visibility = View.GONE
-//        }
     }
-
-//    private fun initRecipesRecyclerShared(items : List<Item>){
-//
-//
-////        if (mItems.isEmpty()) {
-////            findViewById<TextView>(R.id.no_recipes_found).visibility = View.VISIBLE
-////        } else {
-////            findViewById<TextView>(R.id.no_recipes_found).visibility = View.GONE
-////        }
-//    }
-
 }
