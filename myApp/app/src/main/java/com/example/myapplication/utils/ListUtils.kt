@@ -2,6 +2,9 @@ package com.example.myapplication.utils
 
 import com.example.myapplication.data.model.Item
 
+/**
+ * @return a list of placeholder items
+ */
 fun getPlaceholderItems(): MutableList<Item> {
     val list = mutableListOf<Item>()
 

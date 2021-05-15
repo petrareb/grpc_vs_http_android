@@ -21,13 +21,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val httpLocalhostButton = findViewById<Button>(R.id.button_http_localhost_items)
-        httpLocalhostButton.setOnClickListener {
-            val intent = Intent(this, ItemsHttpActivity::class.java)
-            intent.putExtra(Constants.LOCALHOST, true)
-            startActivity(intent)
-        }
-
         val grpcButton = findViewById<Button>(R.id.button_grpc_items)
         grpcButton.setOnClickListener {
             val intent = Intent(this, ItemsGrpcActivity::class.java)

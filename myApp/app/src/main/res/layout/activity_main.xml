@@ -24,14 +24,6 @@
         android:layout_marginTop="100dp" />
 
     <Button
-        android:id="@+id/button_http_localhost_items"
-        style="@style/ButtonActivityMain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Get items from HTTP API (localhost)" />
-
-    <Button
         android:id="@+id/button_grpc_items"
         style="@style/ButtonActivityMain"
         android:layout_width="match_parent"
